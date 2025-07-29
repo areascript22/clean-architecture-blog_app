@@ -32,15 +32,12 @@ class BlogBloc extends Bloc<BlogEvent, BlogState> {
         topics: event.topics,
       ),
     );
-    print("Blog upload result: $res");
 
     res.fold(
       (l) {
-        print("Blog upload failed: ${l.message}");
         emit(BlogFailure(l.message));
       },
       (r) {
-        print("Blog upload successful");
         emit(BlogUploadSuccess());
       },
     );

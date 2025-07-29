@@ -10,7 +10,7 @@ class AppTheme {
     scaffoldBackgroundColor: AppPallete.backgroundColor,
     appBarTheme: const AppBarTheme(backgroundColor: AppPallete.backgroundColor),
     chipTheme: const ChipThemeData(
-      color: MaterialStatePropertyAll(AppPallete.backgroundColor),
+      color: WidgetStatePropertyAll(AppPallete.backgroundColor),
       side: BorderSide.none,
     ),
 

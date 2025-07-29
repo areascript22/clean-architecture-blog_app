@@ -126,7 +126,7 @@ class _AddNewBlogPageState extends State<AddNewBlogPage> {
                               radius: Radius.circular(15),
                             ),
 
-                            child: Container(
+                            child: SizedBox(
                               height: 150,
                               width: double.infinity,
                               child: Column(
@@ -166,7 +166,7 @@ class _AddNewBlogPageState extends State<AddNewBlogPage> {
                                         label: Text(e),
                                         color:
                                             selectedTopics.contains(e)
-                                                ? const MaterialStatePropertyAll(
+                                                ? const WidgetStatePropertyAll(
                                                   AppPallete.gradient1,
                                                 )
                                                 : null,

@@ -8,7 +8,6 @@ Future<File?> pickImage() async {
       source: ImageSource.gallery,
       imageQuality: 20,
     );
-    print("object");
     if (xFile != null) {
       return File(xFile.path);
     }
